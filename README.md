@@ -92,6 +92,8 @@ jobs:
             CNAME
             default.css
             index.html
+          repo-title: Flatpak repository
+          repo-url: https://example.com
 
   # See "Github Pages" below
   deploy:
@@ -169,6 +171,16 @@ The `upload-pages-includes` input allows including additional files in the GitHu
 artifact, such as a `index.html`. See [GitHub Pages](#github-pages) for more
 information.
 
+### index.flatpakrepo Options
+
+| Name               | Default                  |
+|--------------------|--------------------------|
+| `repo-title`       | `Repository name`        |
+| `repo-description` | `Repository description` |
+| `repo-url`         | `Default pages URL`      |
+| `repo-homepage`    | `Repository URL`         |
+| `repo-icon`        | `Flatpak icon`           |
+
 ### Test Options
 
 Flatter supports an opinionated test runner, dynamically rewriting Flatpak
@@ -229,7 +241,7 @@ to `flatpak build-bundle`:
 flatpak-build-bundle-args: |
   --runtime-repo=https://platform.io/platform.flatpakrepo
 ```
-  
+
 The following options are set internally for `flatpak build-bundle`:
 
 * `--arch`
