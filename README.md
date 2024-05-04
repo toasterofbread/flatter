@@ -171,7 +171,7 @@ The `upload-pages-includes` input allows including additional files in the GitHu
 artifact, such as a `index.html`. See [GitHub Pages](#github-pages) for more
 information.
 
-### index.flatpakrepo Options
+### flatpakrepo Options
 
 | Name               | Default                  |
 |--------------------|--------------------------|

@@ -43,6 +43,28 @@ inputs:
       A list of files to include in the GitHub Pages artifact.
     required: false
 
+  # flatpakrepo Options
+  repo-title:
+    description: >
+      Repository name.
+    required: false
+  repo-description:
+    description: >
+      Repository description.
+    required: false
+  repo-url:
+    description: >
+      Default pages URL.
+    required: false
+  repo-homepage:
+    description: >
+      Repository URL.
+    required: false
+  repo-icon:
+    description: >
+      Flatpak icon.
+    required: false
+
   # Test Options
   run-tests:
     description: >
